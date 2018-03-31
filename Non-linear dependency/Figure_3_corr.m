@@ -6,12 +6,6 @@
 %      https://drive.google.com/file/d/0B51mihVyZFnVTXd3cm1GZlBoLWc/view?usp=sharing
 % (3) GDSC_v6_Cell_Lines_Details from
 %      https://drive.google.com/file/d/0B51mihVyZFnVdFFOVzdYSE1vNVE/view?usp=sharing
-% (4) GDSC_Data_v6_(Common_Genes_&_Cell-lines)_SRD_Mar_01.xlsx from
-%      https://drive.google.com/file/d/0B51mihVyZFnVYUJFS3lPbGtzUVk/view?usp=sharing
-% (5) CCLE_Data_(Common_Genes_&_Cell-lines)_SRD_Mar_01.xlsx from
-%      https://drive.google.com/file/d/0B51mihVyZFnVSTJiTFVWWHpwazg/view?usp=sharing
-[GG_num,GG_txt]=xlsread('GDSC_Data_v6_(Common_Genes_&_Cell-lines)_SRD_Mar_01.xlsx');
-[CG_num,CG_txt]=xlsread('CCLE_Data_(Common_Genes_&_Cell-lines)_SRD_Mar_01.xlsx');
 
 DD=1:15;
 In=nchoosek(DD,2);
