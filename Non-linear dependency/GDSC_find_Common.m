@@ -1,7 +1,7 @@
 function [Cell_lines_sensitivity,Drugs_AUC]=GDSC_find_Common(Drug)
 GDSC_drugs=[1026 38 1062 1 119 1013 1047 11 1060 1054 37 6 1036 30 35];
 [GS_num,~,~]=xlsread('GDSC_v6_v17_fitted_dose_response');
-[cell_num,cell_txt,~]=xlsread('C:\Users\Raziur_Rahman\Google Drive\Data CCLE and GDSC\GDSC\Version 6\GDSC_v6_Cell_Lines_Details');
+[cell_num,cell_txt,~]=xlsread('GDSC_v6_Cell_Lines_Details');
 
 Ind_D1=find(GDSC_drugs(Drug(1))==GS_num(:,4));
 D1_cosmic=GS_num(Ind_D1,3);
