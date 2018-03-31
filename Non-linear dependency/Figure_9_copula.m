@@ -7,6 +7,7 @@
 DD=1:15;
 NN=25;
 for Drug=1:length(DD)
+    fprintf('\nCalculating information for Drug no %d out of 15 drug-pairs\n', II);
     GDSC_drug_sensitivity=[];    GDSC_cell_lines=[];
     [GS_num, GS_txt]=xlsread('GDSC_drug_common.xlsx');
     GDSC_drug_sensitivity1=1-GS_num(8:end,4+Drug);   
