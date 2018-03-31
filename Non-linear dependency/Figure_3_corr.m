@@ -17,6 +17,7 @@ DD=1:15;
 In=nchoosek(DD,2);
 Corr_Pearson = zeros(size(In,1),2);
 for II=1:size(In,1)
+    fprintf('\nCalculating information for Drug pair no %d out of 105 drug-pairs\n', II);
     Drug=[In(II,1) In(II,2)];
     [CCLE_Cell_lines,CS_Drugs_AUC]=CCLE_find_Common(Drug);
     [GDSC_Cell_lines,GS_Drugs_AUC]=GDSC_find_Common(Drug);
